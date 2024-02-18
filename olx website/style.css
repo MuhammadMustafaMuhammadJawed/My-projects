@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navlogo1 img{
+    width: 50px;
+    height: 25px;
+
+}
+.navbar1, .navbar2{
+    margin: 10px auto;
+    width: 80%;
+}
+.navlinks1 img{
+    width: 25px;
+    height: 25px;
+border-radius: 50%;
+}
+.navlinks1 a{
+    text-decoration: none;
+    color: black;
+    margin: 0 30px;
+}
+.navbar1{
+    display: flex;
+    gap: 180px;
+    /* border: 1px solid red; */
+    
+}
+.navlinks1 a:hover{
+    color: lightblue
+}
+.navlogo2 img{
+    width: 80px;
+    height: 40px;
+
+}
+.navinput1 button{
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    font-size: 20px;
+border-radius: 5px;
+}
+.input2 input{
+    max-width: 80%;
+    height: 50px;
+    outline: none;
+    border: 2px solid black;
+}
+.input2 button{
+    /* outline: 2px solid black; */
+    border: 2px solid black;
+
+    
+}
+.navlinks2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.navbar2{
+    display: flex;
+    
+}
+.navlinks2 a:hover{
+    text-decoration: underline;
+}
+.selllink{
+    /* border: 1px solid red; */
+    height: 50px;
+    width: 120px;
+    padding: 7px 25px;
+background-image: url(https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg);
+background-repeat: no-repeat;
+
+object-fit: fill;
+}
+.input2 i{
+    outline: none;
+    
+}
+.navlogo1, .navlogo2 img{
+    cursor: pointer;
+}
+.navbar3{
+    width: 80%;
+    margin: 10px auto;
+}
+.navlist li{
+    cursor: pointer;
+}
+.navlist li:hover{
+    color: green;
+
+}
+.cards1 img{
+    cursor: pointer;
+}
+.imglink{
+    display: flex;
+}
+.childa li{
+    cursor: pointer;
+}
+.contact img{
+    width: 84px;
+    height: 28px;
+    cursor: pointer;
+}
+.footer2{
+    width: 100%;
+    padding: 20px 20px;
+}
+.childbtext img{
+    cursor: pointer;
+}
+.footer1img img{
+    height: 100%;
+}
+.childa li:hover{
+    text-decoration: underline;
+}
+.footer1 .child1{
+flex: 2;
+}
+.aaa img{
+    height: 500px;
+    object-fit: cover
+}

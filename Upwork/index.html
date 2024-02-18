@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Upwork</title>
+        <link rel="shortcut icon" href="data:image/png;base64,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"
+                type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+                integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+        <!-- header1 -->
+        <header class="header">
+                <div class="child1">
+
+                        <!-- logo -->
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAAPCAMAAACGJ/w5AAAAaVBMVEX///8AoAAAoQAAnwAApgAAowBpvmbv9+9zwXARqADZ7dkbqRHc7txrvmh8xHnm8+ak1aOGyYRDsj5OtUrA4b/Q6NBUtlCu2a0trCa43rfL5sp4w3X1+vWLyomc0ZqRzI84rzMAmQBhu14ISo4ZAAABXUlEQVQokZ2SzZKDIBCE54cRlChgJGIkiZv3f8gFcshW7WErywGrBr7pnhaAz1Yv7TPcP+RA0afEL3A3dX8Y44uBzqZJg+9OAMEUN9dxBT0laxyAH4cw576AuXvUFs30WZSChfGwKHrjO2SuBxMvjjAl5AhGFH7pCm481WlVBS/KUBSJACsdmS+wSC8DJIREW1EmgV3ZmIuO88LuDUokq0ITR50IgnjymWeHlzYQxknWarBH6SO8QcwXJa0QMAZ0SQE/r3iPeKtFj9uE9VipUXwL52gxWQYnol+KbqGb7HBWAYcTPmuxUBMOr0hScwoPKi0XOlfto5AbJcioZIO71OwtLQCxzvgCCU6cmmRPaUZ0kMkSzwmp9EuKMwwoRe2EeMzIVzBcrQoD3LiFkYPtu3I5YnBdb/fqdzU18NEUMdC77cf2H6tDM9at0z/ehMf1f49pwuv/wFn035fe6xtcShFR7nvtugAAAABJRU5ErkJggg=="
+                                alt="">
+
+                        <ul>
+                                <li><a href="">Find Talent</a></li>
+                                <li><a href="">Find Work</a></li>
+                                <li><a href="">Why Upwork</a></li>
+                                <li><a href="">Enterprise</a></li>
+
+                        </ul>
+
+                </div>
+
+                <div class="child2">
+
+                        <input placeholder="Search" type="text" name="" id=""><i class="fa-solid fa-magnifying-glass"></i>
+
+                        <button>Login</button>
+                        <button>Sign Up</button>
+
+                </div>
+
+        </header>
+
+        <header class="header2">
+
+                <ul><a href="">Development And IT</a></ul>
+                <ul><a href="">AI Services</a></ul>
+                <ul><a href="">Design & Creative</a></ul>
+                <ul><a href="">Sales And Marketing</a></ul>
+                <ul><a href="">Admin & Customer Support</a></ul>
+                <ul><a href="">More </a></ul>
+        </header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="main">
+                <section class="section1">
+
+                        <div class="childa">
+                                <h1>How Work <br> Should Work </h1><br><br>
+                                <p>Forget the old rules. You can have the best people. <br>
+                                        Right now. Right here.</p><br><br>
+
+                                <button>Get Started</button><br><br><br><br>
+
+                                <p>Trusted By</p><br>
+                                <img src="./images/microsoft.png" alt="">
+                                <img src="./images/bissell.png" alt="">
+                                <img src="./images/airbnb.png" alt="">
+                        </div>
+
+                        
+
+
+
+
+                        </div>
+
+
+                </section>
+
+                
+
+                <div class="image">
+
+                        <img src="https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,w_440,h_300,f_auto,q_auto,dpr_2.0/brontes/hero/searching-talent@1x.png"
+                                alt="">
+
+
+
+
+                </div>
+               
+
+
+        </section>
+
+        <div class="imgg">
+                <img src="./images/banner5.png" alt="">
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <section class="section2">
+                <h1>Browse Talent By Category</h1><br>
+                <p>Looking For Work ?</p>
+                <p><a href="">Browse Jobs</a></p>
+                <br>
+                <br>
+                <br>
+                <div class="cardsa">
+
+
+                        <div class="card1">
+                                <h2>Development And IT</h2>
+                                <p>1853 skills</p>
+                        </div>
+
+                        <div class="card2">
+                                <h2>AI Services</h2>
+                                <p>294 skills</p>
+                        </div>
+
+                        <div class="card3">
+                                <h2>Design And Creative</h2>
+                                <p>968 skills</p>
+                        </div>
+
+                        <div class="card4">
+                                <h2>Sales And Marketing</h2>
+                                <p>392 skills</p>
+                        </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="cardsb">
+
+
+                        <div class="card5">
+                                <h2>Writing And Translation</h2>
+                                <p>505 skills</p>
+                        </div>
+
+                        <div class="card6">
+                                <h2>Admin & Customer Support</h2>
+                                <p>508 skills</p>
+                        </div>
+
+                        <div class="card7">
+                                <h2>Finance & Accounting</h2>
+                                <p>214 skills</p>
+                        </div>
+
+                        <div class="card8">
+                                <h2>Engineering & Architecture</h2>
+                                <p>650 skills</p>
+                        </div>
+
+
+        </section>
+<br>
+<br>
+<br>
+       <section class="section3">
+
+<div class="img">
+<img src="./images/gif.png" alt="">
+</div>
+
+<div class="text">
+
+<h1>Up your work game, it’s easy</h1><br>
+
+<h3>No Cost To Join</h3>
+<p>Register and browse professionals, explore projects, or even <br> book a consultation.</p>
+<h3>Post a job and hire top talent</h3>
+<p>Finding talent doesn’t have to be a chore. Post a job or we can <br> search for you!</p>
+<h3>Work with the best—without breaking the bank</h3>
+<p>Upwork makes it affordable to up your work and take advantage <br> of low transaction rates.</p>
+<br>
+<br>
+
+<button>Sign Up For Free</button>
+<button>Learn How To Hire</button>
+
+</div>
+
+       </section>
+
+<br>
+<br>
+<br>
+
+<section class="banner1">
+
+
+<img src="./images/banner1.png" alt="">
+
+
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="banner2">
+
+
+<img src="./images/banner2.png" alt="">
+
+
+</section>
+
+
+<br>
+<br>
+<br>
+
+<section class="banner3">
+
+
+<img src="./images/banner3.png" alt="">
+
+
+</section>
+<br>
+<br>
+<br>
+
+<section class="banner4">
+
+
+<img src="./images/banner4.png" alt="">
+
+
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="cards">
+<img src="./images/card1.png" alt="">
+<img src="./images/card2.png" alt="">
+
+
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="phalestine">
+<div class="text1">
+<h1>We Support Phalestine</h1>
+<p>We are taking action to help our freelancers, our clients, and the people of Phalestine—and so can you.</p>
+<br>
+<br>
+<button>Learn more</button>
+</div>
+
+<div class="imagee">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg" alt="">
+
+
+</div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer class="footer1">
+<div class="list1">
+<h1>Top Skills</h1><br>
+<h1>Trending Skills</h1><br>
+<h1>Top Skills In US</h1><br>
+<h1>Project Catalog <sup>TM</sup> </h1><br>
+<h1></h1>
+</div>
+
+<div class="list2">
+
+<ul>
+
+<li>Generative AI Specialists</li><br>
+<li>Data Entry Specialists</li><br>
+<li>Video Editors</li><br>
+<li>Data Analyst</li><br>
+<li>Shopify Developers</li><br>
+<li>Ruby on Rails Developer</li><br>
+<li>Android Developer</li><br>
+<li>Bookkeeper</li><br>
+<li>Copywriter</li><br>
+<li>Data Scientist</li><br>
+<li>Front-End Developer</li><br>
+<li> Game Developer</li><br>
+<li>Graphic Designer</li><br>
+<li>iOS Developer</li><br>
+<li>Java Developer</li><br>
+
+</ul>
+</div>
+
+
+
+
+
+<div class="list3">
+
+                <ul>
+                
+                <li>Generative AI Specialists</li><br>
+                <li>Data Entry Specialists</li><br>
+                <li>Video Editors</li><br>
+                <li>Data Analyst</li><br>
+                <li>Shopify Developers</li><br>
+                <li>Ruby on Rails Developer</li><br>
+                <li>Android Developer</li><br>
+                <li>Bookkeeper</li><br>
+                <li>Copywriter</li><br>
+                <li>Data Scientist</li><br>
+                <li>Front-End Developer</li><br>
+                <li> Game Developer</li><br>
+                <li>Graphic Designer</li><br>
+                <li>iOS Developer</li><br>
+                <li>Java Developer</li><br>
+                
+                </ul>
+                </div>
+                
+
+
+</footer>
+<br>
+<br>
+<br>
+<br>
+<footer class="mainfooter">
+
+<div class="lista">
+<p>For Clients</p><br>
+<ul>
+
+<li>How to Hire</li>
+<li>Talent Marketplace</li>
+<li>Project Catalog</li>
+<li>Hire an Agency</li>
+<li>Enterprise</li>
+<li>Any Hire</li>
+<li>Contract-to-Hire</li>
+<li>Direct Contracts</li>
+<li>Hire Worldwide</li>
+<li>Hire in the USA</li>
+
+</ul>
+
+</div>
+
+
+<div class="listb">
+        <p>For Talent</p><br>
+        <ul>
+        
+        <li>How to Find Work</li>
+        <li>Direct Contracts</li>
+        <li>Find Freelance Jobs Worldwide</li>
+        <li>Find Freelance Jobs in the USA</li>
+        
+        </ul>
+        
+        </div>
+        
+        <div class="listc">
+                <p>Resources</p><br>
+                <ul>
+                
+                <li>Help & Support</li>
+                <li>Success Stories</li>
+                <li>Upwork Reviews</li>
+                <li>Resources</li>
+                <li>Blog</li>
+                <li>Community</li>
+                <li>Affiliate Program</li>
+                <li>Free Business tools</li>
+              
+                
+                </ul>
+                
+                </div>
+                
+                
+                
+                <div class="listd">
+                        <p>Company</p><br>
+                        <ul>
+                        
+                        <li>About Us </li>
+                        <li>Leadership</li>
+                        <li>Investor Relations</li>
+                        <li>Careers</li>
+                        <li>Our Impact</li>
+                        <li>Press</li>
+                        <li>Contact Us</li>
+                        <li>Trust, Safety & Security</li>
+                        <li>Modern Slavery Statement</li>
+                        
+                        </ul>
+                        
+                        </div>
+                        
+                       <br> 
+                       <br> 
+                       <br> 
+                       <br> 
+                       <br> 
+<div class="icons">
+
+<div class="a">
+ <b><p>Follow Us</p></b>
+<br>
+ <a href=""><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.png" alt=""></a>
+ <a href=""><img src="https://cdn4.iconfinder.com/data/icons/social-media-outline-3/60/Social-35-Linkedin-Outline-512.png" alt=""></a>
+ <a href=""><img src="https://img.lovepik.com/png/20231019/youtube-icon-youtube-logo-black-and-icon-youtube-play-button_266811_wh1200.png" alt=""></a>
+ <a href=""><img src="https://i.pinimg.com/originals/7d/bd/0b/7dbd0b51c20a695901a84c4c083500f6.png" alt=""></a>
+ 
+
+
+</div>
+
+
+
+
+</div>                        
+
+
+
+</footer>
+<footer class="mainlogo">
+<a href=""><img src="https://w7.pngwing.com/pngs/80/704/png-transparent-upwork-hd-logo.png" alt=""></a>
+</footer>
+</body>
+
+</html>

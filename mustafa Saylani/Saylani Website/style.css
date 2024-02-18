@@ -1,0 +1,627 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .navbar{
+    border-bottom: 1px solid black;
+    border-bottom-style: solid;
+    width: 100%;
+   display: inline-block;
+   background-color: #000;
+
+}
+.navlogo img{
+    height: 70px;
+    position: relative;
+    left: 100px;
+    top: 5px;
+    display: inline-block;
+}
+.navlinks li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navlinks ul{
+    display: inline-block;
+}
+.navlinks a{
+    text-decoration: none;
+    text-transform: capitalize;
+ 
+}
+.navlinks{
+    display: inline-block;
+} */
+
+
+
+
+
+
+
+
+
+
+.header {
+    background-color: white; /* Add your desired background color */
+    padding: 10px; /* Add padding to the header if needed */
+border-bottom: 1px solid gray;
+/* border-bottom-style: groove; */
+position: sticky;
+top: 0%;
+z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlogo img {
+    max-height: 50px; /* Adjust the max height of the logo as needed */
+margin-left: 100px;
+cursor: pointer;
+}
+
+.navlinks ul {
+    list-style: none;
+    margin-right: 150px;
+    padding: 0;
+    display: flex;
+}
+
+.navlinks li {
+    margin-right: 20px; /* Adjust the spacing between each navigation link */
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: #333; /* Set the color of the links */
+    font-weight: bold; /* Adjust font weight as needed */
+}
+.navlinks li:hover{
+text-decoration: underline;
+scale: 1.2;
+
+}
+.navlinks button{
+    background-color: #0d6db7;
+    color: white;
+    height: 20px;
+    width: 100px;
+border-radius: 20px;
+cursor: pointer;
+
+}
+.navlinks .greenbutton{
+    background-color: #8dc63f;
+    cursor: pointer;
+}
+.hero1{
+    /* border: 2px solid red; */
+    margin-top: 10%;
+    margin-left: 5%;
+    }
+.text1{
+color: #8dc63f;
+}
+
+.herotext{
+/* position: relative; */
+left: 80px;
+top: 150px;
+font-size: 20px;
+display: inline-block;
+
+}
+.herotext button{
+    width: 250px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    cursor: pointer;
+display: inline-block;
+
+}
+.image img{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+     top:22%;
+     right: 5%;
+    display: flex;
+}
+/* Add the following CSS styles */
+.herotext{
+    display: inline-block;
+}
+
+.inputbox{
+    position: absolute;
+    top: 100%;
+    background-color: #b6ef4933;
+    height: 100px;
+    width: 100%;
+    z-index: -1;
+     
+}
+.input{
+    padding: 50px 50px;
+}
+.input input{
+    outline: none;
+    height: 30px;
+    display: inline-block;
+}
+.input label{
+    background-color: #424242;
+    border-radius: 3px;
+    padding: 9px 9px;
+}
+.inputbox .button{
+ display: inline-block;
+position: absolute;
+top: 20%;
+left: 30%;
+}
+.inputbox .button button{
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+    background-color: white;
+    border-style: none;
+border-radius: 15px;
+}
+.inputbox .button button:hover{
+background-color: gray;
+color: white;
+scale: 1.2;
+}
+.banner img{
+    width: 100%;
+    height: 700px;
+}
+.heading h1{
+text-align: center;
+font-size: 50px;
+font-family: sans-serif;
+}
+
+.linkcard .linkcard1{
+height: 152px;
+width: 216px;
+position: absolute;
+left: 10%;
+background-color: #b6ef4933;
+text-align: center;
+
+}
+.linkcard .linkcard2{
+    height: 152px;
+    width: 216px;
+    position: absolute;
+    left: 25%;
+    background-color: #b6ef4933;
+    text-align: center;
+    
+    }
+    .linkcard .linkcard3{
+        height: 152px;
+        width: 216px;
+        position: absolute;
+        left: 40%;
+        background-color: #b6ef4933;
+        text-align: center;
+        
+        }
+        .linkcard .linkcard4{
+            height: 152px;
+            width: 216px;
+            position: absolute;
+            left: 55%;
+            background-color: #b6ef4933;
+            text-align: center;
+            
+            }
+            .linkcard .linkcard5{
+                height: 152px;
+                width: 216px;
+                position: absolute;
+                left: 70%;
+                background-color: #b6ef4933;
+                text-align: center;
+                
+                }
+                .linkcard .linkcard6{
+                    height: 152px;
+                    width: 216px;
+                    position: absolute;
+                    left: 85%;
+                    background-color: #b6ef4933;
+                    text-align: center;
+                    
+                    }
+                    .linkcard {
+                        cursor: pointer;
+                    }
+                    .linkcard{
+                      border-radius: 20px;
+                    }
+                        
+ .maincards .card1{
+     background-image: url(./images/cardimg1.jpg);
+     background-size: cover;
+    width: 336px; 
+    height: 300px ;
+    margin-top: 10%; 
+    margin-left: 10%;
+    background-repeat: no-repeat; 
+position: relative;
+border-radius: 5px; 
+cursor: pointer; 
+
+}                   
+.card1 button{
+   margin-top: 70%;
+   width: 90%;
+   height: 40px;
+  margin-left: 15px;
+ background-color: #8dc63f;
+border-radius:10px; 
+cursor: pointer;
+
+}
+.card1 .para1{
+    position: absolute;
+top: 65%;
+left: 20px;
+color: white;
+}
+
+/* card2 */
+.maincards .card2{
+    background-image: url(./images/cardimg2.jpg);
+    background-size: cover;
+   width: 336px; 
+   height: 300px ;
+   margin-top: -19%; 
+   margin-left: 40%;
+   background-repeat: no-repeat; 
+position: relative;
+border-radius: 5px; 
+cursor: pointer; 
+
+}                   
+.card2 button{
+  margin-top: 70%;
+  width: 90%;
+  height: 40px;
+ margin-left: 15px;
+background-color: #8dc63f;
+border-radius:10px; 
+cursor: pointer;
+
+}
+.card2 .para2{
+   position: absolute;
+top: 65%;
+left: 20px;
+color: white;
+}
+
+/* card3 */
+.maincards .card3{
+    background-image: url(./images/cardimg3.jpg);
+    background-size: cover;
+   width: 336px; 
+   height: 300px ;
+   margin-top: -19%; 
+   margin-left: 70%;
+   background-repeat: no-repeat; 
+position: relative;
+border-radius: 5px;
+cursor: pointer; 
+}                   
+.card3 button{
+  margin-top: 70%;
+  width: 90%;
+  height: 40px;
+ margin-left: 15px;
+background-color: #8dc63f;
+border-radius:10px; 
+cursor: pointer;
+
+}
+.card3 .para3{
+   position: absolute;
+top: 55%;
+left: 20px;
+color: white;
+font-size: 30px;
+}
+
+.maincards .card1:hover{
+scale: 1.2;
+}
+.maincards .card2:hover{
+    scale: 1.2;
+    }
+    .maincards .card3:hover{
+        scale: 1.2;
+        }
+        
+.img1 img{
+    width: 45%;
+    height: 522px;
+    margin-left: 10%;
+    border-radius: 5px;
+    display : flex;
+
+}
+.text{
+    /* display : flex; */
+    margin-left: 60%;
+    position: relative;
+   bottom: 535%;
+   /* left:50% ;  */
+   /* right: 50% */
+   font-size: 20px;
+}
+.counterbox{
+    width: 100%;
+    height: 445px;
+    background-image: url(https://saylaniwelfare.com/static/media/upcoming_background.a669f19ea2aee3c7e10f.png);
+background-color:#0d6db7;
+position: relative;
+bottom: 500%;
+display: flex;
+
+}
+.elements{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    
+font-weight: bolder;
+text-align: center;
+font-size: 20px;
+color: black;
+display: flex;
+
+}
+.elements img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+background-color: white;
+background-size: auto;
+margin-left: 40%;
+}
+.textz1{
+    position: absolute;
+    right: 35%;
+    display: flex;
+text-align: center;
+justify-content: center;
+top: 100%;
+}
+
+.textz2{
+    position: absolute;
+    right: -40%;
+    display: flex;
+text-align: center;
+justify-content: center;
+top: 100%;
+}
+
+.textz3{
+    position: absolute;
+    right: -95%;
+    display: flex;
+text-align: center;
+justify-content: center;
+top: 100%;
+}
+
+.textz4{
+    position: absolute;
+    right: -160%;
+    display: flex;
+
+top: 100%;
+
+}
+.test{
+    background-color: lightgray;
+    width: 90%;
+    height: 470px;
+    margin-left: 5%;
+    position: relative;
+  text-align: center;
+}
+.test img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    right: 50%;
+    top: 10%
+}
+.t{
+   position: absolute;
+
+   top: 55%;
+left: 4%
+
+}
+.name{
+    color: #0d6db7;
+    font-size: 30px;
+}
+.para{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.heading1{
+    margin-top: -25%;
+}
+.content1{
+    margin-left: 10%;
+}
+.content2{
+    margin-left: 10%;
+}
+.cardA{
+    width: 350px;
+    height: 350px;
+    background-color: lightgrey;
+margin-left: 10%;
+
+}
+.cardA img{
+    width: 350px;
+    height: 200px;
+}
+.cardA p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.cardB{
+    width: 350px;
+    height: 350px;
+    background-color: lightgrey;
+margin-left: 33%;
+margin-top: -22.2%
+}
+.cardB img{
+    width: 350px;
+    height: 200px;
+}
+.cardB p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.cardC{
+    width: 350px;
+    height: 350px;
+    background-color: lightgrey;
+margin-left: 56%;
+margin-top: -22.2%
+
+}
+.cardC img{
+    width: 350px;
+    height: 200px;
+}
+.cardC p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.cardD{
+    width: 320px;
+    height: 350px;
+    background-color: lightgrey;
+margin-left: 79%;
+position: absolute;
+margin-top: -22.2%
+
+}
+.cardD img{
+    width: 320px;
+    height: 200px;
+}
+.cardD p{
+    font-size: 30px;
+    margin-left: 20px;
+}
+content3{
+    position: relative;
+}
+
+.inputbox1{
+    width: 80%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position: relative;
+background-image: url(https://www.saylaniwelfare.com/static/media/guide_back.3a5127e910c15a49f875.png);
+background-color: #0d6db7;
+margin-left: auto;
+margin-right: auto;
+
+}
+.inputbox1 input{
+
+    position: absolute;
+    top: 60%;
+    width: 30%;
+    height: 40px;
+background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 5px;
+
+}
+.inputbox1 button{
+
+    position: absolute;
+    top: 80%;
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-color: transparent;
+    cursor: pointer;
+}
+.inputbox1 h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.footer{
+    width: 100%;
+    background-color: gray;
+    background-image: url(https://www.saylaniwelfare.com/static/media/upcoming_background.a669f19ea2aee3c7e10f.png);
+position: relative;
+
+}
+.logo img{
+margin-left: 10%;
+margin-top: 5%;
+}
+.icons{
+   margin-left: 10%;
+}
+.icons label{
+    margin-left: 20px;
+  cursor: pointer;
+}
+.lists{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+text-align: center;
+font-size: 15px;
+position: absolute;
+top: 0%;
+left: 40%;
+bottom: 0%;
+}
+.lists li{
+list-style: none;
+
+}

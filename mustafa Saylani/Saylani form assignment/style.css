@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+.icons{
+ margin-left: 200px
+}
+
+.heading{
+    text-align: center;
+    list-style: none;
+    display: inline;
+}
+.heading ul a{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid black;
+    text-decoration: none;
+    color: #0d6db7;
+    background-color: #FAFAFA;
+    border-radius: 2px 2px 0 0;
+    padding: 8px 16px;
+    margin-top: 10px
+}
+.heading ul a:hover{
+    color: greenyellow;
+}
+.sub8 ul{
+    list-style: none;
+    display: inline-block;
+/* margin: 20px 20px; */
+}
+
+/* .verymain {
+    margin-left: 200px;
+    justify-content: center;
+    display: inline-block;
+} */
+.button button{
+    background-color:#0d6db7;
+    color: white;
+    width: 336px;
+    height: 41px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 40%;
+    cursor: pointer;
+    border-radius: 10px
+}
+.verymain select, input{
+border: 1px solid rgb(97, 187, 97);
+border-radius: 5px;
+}
+.input8 input{
+    border-style: none;
+    
+}
+
+
+
+
+  .main,
+  .main2,
+  .main3,
+  .main4,
+  .main5,
+  .main6,
+  .main7,
+  .main8 {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    margin-left: 300px;
+    color: #0d6db7;
+  }
+
+  .sub,
+  .sub2,
+  .sub3,
+  .sub4,
+  .sub5,
+  .sub6,
+  .sub7,
+  .sub8 {
+      margin-top: 20px;
+    flex: 0 0 calc(50% - 20px); /* Adjust the width as needed, considering margin */
+    margin-bottom: -20px; /* Add space between rows */
+   
+  }
+
+.para1{
+    margin-left: 70px;
+}
+
+  
+.sub,
+  .sub2,
+  .sub3,
+  .sub4,
+  .sub5,
+  .sub6,
+  .sub7,
+  .sub8 input{
+      
+  }
+  .sub8 ul, .para2{
+color: black;
+  }
