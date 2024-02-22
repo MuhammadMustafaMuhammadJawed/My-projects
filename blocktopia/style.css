@@ -1,0 +1,103 @@
+*{
+    background-color: black;
+    color: white;
+}
+.navbar{
+    display: flex;
+    top: 10px;
+    
+}
+.child2 li{
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+}
+.child2 ul{
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    right: 150px;
+    top: 15px;
+}
+.child2 button{
+    background-color:purple;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+.child2 li:hover{
+    color: purple;
+    text-decoration: underline;
+}
+.child2 li i{
+    color: purple;
+}
+.child1{
+    position: absolute;
+top: 10px;
+left: 15px
+
+}
+.child1 img{
+    cursor: pointer;
+}
+.childa img{
+width: 600px;
+height: 300px;
+border-radius: 20px;
+}
+.childa{
+    background-color: black;
+}
+.body{
+    background-color: black;
+    color: white;
+}
+.text h1{
+    color: blueviolet;
+    font-size: 70px
+}
+.text button{
+    border: 2px solid purple;
+    border-radius: 20px;
+    width: 200px;
+    height: 35px;
+}
+.container{
+    display: flex;
+    justify-content: space-around
+}
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 80%;
+    margin: 0px auto;
+}
+.container2 .bacha1 img{
+    height: 350px;
+    
+} 
+.container2 .bacha2{
+    align-items: center;
+    /* position: absolute; */
+    margin-top: 50px;
+
+}
+.container2 .bacha3 img{
+    width: 500px;
+    height: 350px;
+}
+.carda img{
+    height: 350px;
+    width: 420px;
+    border-radius: 20px; 
+}
+.cards{
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+}
