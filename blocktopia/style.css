@@ -1,5 +1,5 @@
 *{
-    background-color: black;
+    /* background-color: black; */
     color: white;
 }
 .navbar{
@@ -65,6 +65,9 @@ border-radius: 20px;
     border-radius: 20px;
     width: 200px;
     height: 35px;
+    background-color: black;
+    color: purple;
+    font-weight: bold;
 }
 .container{
     display: flex;
@@ -100,4 +103,182 @@ border-radius: 20px;
     width: 80%;
     margin-left:auto;
     margin-right:auto;
+}
+.carda{
+    display: flex;
+}
+.social img{
+    height: 100px;
+    width: 100px;
+}
+.social{
+    text-align: center;
+    
+}
+hr{
+    color: white;
+}
+.mainfooter{
+    text-align: center;
+}
+.video video{
+    width:100%;
+    
+}
+
+
+
+
+
+
+/* cards */
+.cardmain{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardmain .card1{
+    background-image: url(./iamges/earn_tile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 350px;
+    position: relative;
+border-radius: 5px; 
+
+}
+.card1 .text1{
+    position: absolute;
+    top: 10%;
+    color: white;
+    background-color: transparent; 
+    left: 10px;
+    text-align: center; 
+}
+
+.card1 button{
+    margin-top: 70%;
+    width: 50%;
+    height: 40px;
+   margin-left: 100px;
+   border: 2px solid purple;
+  background-color: black;
+ border-radius:10px; 
+ cursor: pointer;
+ color: blueviolet;
+ 
+}
+/* card2 */
+.cardmain .card2{
+    background-image: url(./iamges/play_tile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 350px;
+    position: relative;
+border-radius: 5px; 
+
+}
+.card2 .text2{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    text-align: center;
+    color: white;
+    background-color: transparent;  
+}
+
+.card2 button{
+    margin-top: 70%;
+    width: 50%;
+    height: 40px;
+    margin-left: 100px;
+    border: 2px solid purple;
+  background-color: black;
+ border-radius:10px; 
+ cursor: pointer;
+ color: blueviolet;
+ 
+}
+
+
+
+
+
+
+/* card second part */
+
+
+
+.cardmain2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cardmain2 .card3{
+    background-image: url(./iamges/dao_tile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 350px;
+    position: relative;
+border-radius: 5px; 
+
+}
+.card3 .text3{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    text-align: center;
+    color: white;
+    background-color: transparent;  
+}
+
+.card3 button{
+    margin-top: 70%;
+    width: 50%;
+    height: 40px;
+    margin-left: 100px;
+    border: 2px solid purple;
+  background-color: black;
+ border-radius:10px; 
+ cursor: pointer;
+ color: blueviolet;
+ 
+}
+/* card4*/
+.cardmain2 .card4{
+    background-image: url(./iamges/nft_tile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 350px;
+    position: relative;
+border-radius: 5px; 
+
+}
+.card4 .text4{
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    text-align: center;
+    color: white;
+    background-color: transparent;  
+}
+
+.card4 button{
+    margin-top: 70%;
+    width: 50%;
+    height: 40px;
+    margin-left: 100px;
+    border: 2px solid purple;
+  background-color: black;
+ border-radius:10px; 
+ cursor: pointer;
+ color: blueviolet;
+ 
 }
