@@ -45,3 +45,44 @@ var Converted = Number(Score);
 // console.log(id===anotherid); ==> false 
 
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//stack and heap memory
+//stack(Permitive)==> we get copy
+//heap(Non Permitive)==>Get reference from original
+//********************************************** */
+
+// let Name = "Mustafa"
+// let Age = "17"
+// console.log(`Hello my name is ${Name} And my age is ${Age}`);
+
+
+
+// let text = "Mr. Blue has a blue house";
+// let position = text.search("house");
+// console.log(position)
+
+
+
+let anotherName = new String("Mustafa")
+// let Name = "      Mustafa       "
+// console.log(Name.indexOf('a'));
+// console.log(Name.charAt(5));
+// console.log(Name.toLowerCase());
+// console.log(Name.toUpperCase());
+// console.log(Name.toUpperCase());
+// console.log(anotherName.search("t"));
+// console.log(Name.slice(-7,4));
+// console.log(Name.trim());
+// console.log(Name);
+// let url = "https://www.mustafa.com/mustafa%20as.com"
+// let anotherString = url.replace("%20","-")
+// console.log(anotherString);
+
+// let myName = "mustafa--ch--hc"
+// let arrayedName = myName.split("--")
+// console.log(arrayedName);
+
+// let boldMethod = anotherName.bold()
+// console.log(boldMethod);
+
+document.write(anotherName.fontsize(+40));
