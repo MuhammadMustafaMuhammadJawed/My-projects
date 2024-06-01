@@ -119,11 +119,11 @@ let anotherName = new String("Mustafa")
 // console.log(createdDate);
 
 
-let nowDate = Date.now()
-console.log(nowDate);
-console.log(nowDate.toLocaleString('default', {
- weekday:"long"
+// let nowDate = Date.now()
+// console.log(nowDate);
+// console.log(nowDate.toLocaleString('default', {
+//  weekday:"long"
 
-}))
+// }))
 // console.log(nowDate/1000);===>  milliseconds==> seconds
 // console.log(Math.floor(nowDate/1000));===>  milliseconds==> seconds
