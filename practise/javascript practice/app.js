@@ -85,4 +85,45 @@ let anotherName = new String("Mustafa")
 // let boldMethod = anotherName.bold()
 // console.log(boldMethod);
 
-document.write(anotherName.fontsize(+40));
+// document.write(anotherName.fontsize(+40));
+
+
+// ****************maths and number ***************
+
+// const number = 100
+// console.log(number);
+
+// const newNumber  = new Number(20.895632)
+// console.log(newNumber.toExponential());
+
+// const min = 10
+// const max = 20
+
+// console.log(Math.floor(Math.random() * (max - min + 1) )+min);
+
+
+
+// ***********date**************
+
+// let myDate = new Date()
+// console.log(typeof myDate);
+// console.log(myDate);
+// console.log(myDate.toDateString());
+// console.log(myDate.toLocaleString());
+// console.log(myDate.toJSON());
+// console.log(myDate.toISOString());
+
+// let createdDate = new Date(2023,0,14)
+// let createdDate = new Date("2023-01-14")
+// let createdDate = new Date("12-12-2024")
+// console.log(createdDate);
+
+
+let nowDate = Date.now()
+console.log(nowDate);
+console.log(nowDate.toLocaleString('default', {
+ weekday:"long"
+
+}))
+// console.log(nowDate/1000);===>  milliseconds==> seconds
+// console.log(Math.floor(nowDate/1000));===>  milliseconds==> seconds
