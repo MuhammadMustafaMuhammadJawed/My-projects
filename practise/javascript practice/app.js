@@ -127,3 +127,44 @@ let anotherName = new String("Mustafa")
 // }))
 // console.log(nowDate/1000);===>  milliseconds==> seconds
 // console.log(Math.floor(nowDate/1000));===>  milliseconds==> seconds
+
+
+
+
+// ***********************ARRAY***********************
+// let myArr = new Array(1, 2, 3, "Mustafa")
+
+// array copy operation create shallow copies(means they share same reference point(any change so change in original array))
+
+// methods****************
+// myArr.push(5)==>add in last in array
+// myArr.pop() ==>remove from last in array
+// myArr.unshift(9) ==> add in starting
+// myArr.shift() ==> remove from starting
+
+// console.log(myArr.includes(5)); ==> Ask Question
+// console.log(myArr.indexOf(19)); ==> element not present so -1
+// console.log(myArr.join(". ")); ==>convert array to string
+
+// const newArr = ["a","b"  ,"c","d","e","f"]
+// console.log(newArr);
+// console.log(newArr.slice(2,5)); ==> makes copy of the specified portion
+// console.log(newArr.splice(2,5)); ==> REemoves the specified portion from original array
+
+
+
+// var num1 = [1,2,3,4,5,6]
+// var num2 = [7,8,9,10,11,12]
+
+// var allNum = num1.concat(num2)
+// var allNum = [...num1,...num2]==> join two arrays
+// console.log(allNum);
+
+
+// var arr1 = [1,2,3,[4,5,6,7],7,8,[9,10,[11,12,12]]]
+// var realArr = arr1.flat(Infinity)
+// console.log(realArr);
+
+console.log(Array.isArray("mustafa"));
+console.log(Array.from("mustafa"));
+console.log(Array.from({name:"mustafa"}));
