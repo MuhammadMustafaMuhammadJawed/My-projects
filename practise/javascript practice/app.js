@@ -168,3 +168,71 @@ let anotherName = new String("Mustafa")
 // console.log(Array.isArray("mustafa"));
 // console.log(Array.from("mustafa"));
 // console.log(Array.from({name:"mustafa"}));
+
+
+
+// ****************objects*******************
+
+// singleton
+// Object.create ===> create object by constructor
+
+// literal method
+// var JsUser = {}==> literal method`
+
+// const mySymb = Symbol("key1")
+
+
+// const JsUser =  {
+// [mySymb]:"Hello",    
+// name:"Mustafa",
+// Age : 17,
+// email: "Mustafa@google.com",
+// IsLoggedIn:false,
+// }
+// JsUser.Age = 18 ==>to change value
+
+// Object.freeze(JsUser)==>no changes in object 
+// console.log(JsUser[mySymb]); ==>Way to call object
+// console.log(JsUser.name);==>Way to call object
+
+// JsUser.greetings = function () {
+//     console.log("Hello User");
+// }
+// JsUser.greetingtwo = function () {
+//     console.log(`Hello User,${this.name}`);
+// }
+// console.log(JsUser.greetings());
+// console.log(JsUser.greetingtwo());
+
+
+// const usr = new Object()
+// // console.log(usr);
+
+// const newUser = {}
+// newUser.name = "Mustafa"
+// newUser.age = 17
+// newUser.id = "123aaa"
+
+// console.log(newUser);
+
+
+// const regularUser = {
+//     email: "someone@gmail.com",
+//     fullname: {
+//         userfullname: {
+// firstname:"Mustafa",
+// lastname:"Khadeli"
+
+//         }
+//     }
+
+// }
+
+// console.log(regularUser.fullname.userfullname.firstname)
+
+const obj1 = { 1: "a", 2: "b" }
+const obj2 = {3:"a",4:"b"}
+
+// const obj3 = Object.assign({},obj1,obj2)===>to merge objects
+// const obj3 = {...obj1,...obj2}===>to merge objects
+console.log(obj3);
