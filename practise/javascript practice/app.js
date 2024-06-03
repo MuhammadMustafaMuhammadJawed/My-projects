@@ -165,6 +165,6 @@ let anotherName = new String("Mustafa")
 // var realArr = arr1.flat(Infinity)
 // console.log(realArr);
 
-console.log(Array.isArray("mustafa"));
-console.log(Array.from("mustafa"));
-console.log(Array.from({name:"mustafa"}));
+// console.log(Array.isArray("mustafa"));
+// console.log(Array.from("mustafa"));
+// console.log(Array.from({name:"mustafa"}));
