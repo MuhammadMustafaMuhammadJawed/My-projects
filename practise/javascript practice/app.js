@@ -230,9 +230,47 @@ let anotherName = new String("Mustafa")
 
 // console.log(regularUser.fullname.userfullname.firstname)
 
-const obj1 = { 1: "a", 2: "b" }
-const obj2 = {3:"a",4:"b"}
+// const obj1 = { 1: "a", 2: "b" }
+// const obj2 = {3:"a",4:"b"}
 
 // const obj3 = Object.assign({},obj1,obj2)===>to merge objects
 // const obj3 = {...obj1,...obj2}===>to merge objects
-console.log(obj3);
+// console.log(obj3);
+
+
+
+
+// const course = {
+// courseName: "Web Development",
+// courseTeacher:"ABC",
+// courseFee : "free"
+// }
+
+
+// const {courseTeacher : teacher} = course  ==> Destructure Object
+// console.log(teacher);
+
+
+
+
+
+// ***********functions ************
+
+// function addNum(num1,num2) {
+//     return num1+num2
+    
+// }
+// const result = addNum(33,44)
+// console.log("result", result);
+
+
+
+
+function loggedIn (userName = "default Name"){
+// if(!userName){
+//     console.log("please enter your name");
+//     return
+// }
+    return `${userName} is logged in`
+}
+console.log(loggedIn(prompt("enter your name")));
