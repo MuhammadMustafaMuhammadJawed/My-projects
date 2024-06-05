@@ -266,11 +266,79 @@ let anotherName = new String("Mustafa")
 
 
 
-function loggedIn (userName = "default Name"){
+// function loggedIn (userName = "default Name"){
 // if(!userName){
 //     console.log("please enter your name");
 //     return
+// // }
+//     return `${userName} is logged in`
 // }
-    return `${userName} is logged in`
-}
-console.log(loggedIn(prompt("enter your name")));
+// console.log(loggedIn(prompt("enter your name")));
+
+
+// function calculateCartPrice (val1 , val2,...num1 ){
+//     return num1
+// }
+// console.log(calculateCartPrice(500, 6000,6041));
+
+// const user = {
+//     userName: "Mustafa",
+//     price: 199,
+// }
+
+// function handleObject (anyuser){
+//     console.log(`user name is ${anyuser.userName} and the price is ${anyuser.price}`)
+// }
+// handleObject(user)
+
+// const myNewArr = [500,400,300,200]
+
+// function returnArr (anyArr){
+//     return anyArr[2]
+// }
+// console.log(returnArr(myNewArr));
+
+// {}==>scope
+
+
+// console.log(addOne(5));
+// function addOne (num){
+//     return num + 1
+// }
+
+// var functionn = function addTwo(num){
+//     return num +2
+// }
+// console.log(functionn);
+
+// const user = {
+//     username: "mustafa",
+//     userage: 19,
+// welcomemessage: function (){
+//     console.log(`${this.username}, welcome to this website`);
+// // console.log(this);
+// }
+
+// }
+// user.welcomemessage()
+// user.username = "sam"
+//user.welcomemessage()
+// console.log(this);
+
+
+// const abc = ()=>{
+//     let userName = "ALI"
+//     console.log(this);
+// }
+// abc()
+
+
+
+// let addTwo = (num1,num2)=>{
+//     return num1+num2
+// }
+// console.log(addTwo(8,9));
+
+                    //  OR
+// let addTwo = (num1,num2)=> num1+num2
+//  console.log(addTwo(8,9)); ===> implicit return
