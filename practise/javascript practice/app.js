@@ -258,7 +258,7 @@ let anotherName = new String("Mustafa")
 
 // function addNum(num1,num2) {
 //     return num1+num2
-    
+
 // }
 // const result = addNum(33,44)
 // console.log("result", result);
@@ -339,6 +339,153 @@ let anotherName = new String("Mustafa")
 // }
 // console.log(addTwo(8,9));
 
-                    //  OR
+//  OR
 // let addTwo = (num1,num2)=> num1+num2
 //  console.log(addTwo(8,9)); ===> implicit return
+
+
+// ***************** immediatly invoked function expression******
+// (function one (){
+//     console.log("Hello World");
+// })();
+
+// (()=>{console.log("Hello World 2");})();
+
+
+
+
+
+// ( (name) => {
+//     document.write(`Hello, ${name}`);
+// } )('Mustafa')
+
+// var is global scope
+
+
+// let balance = 1000
+
+// if(balance>500) console.log("True");
+
+
+
+// falsy values==> false,0,-0,0n,'',undefined,null,NaN
+// truthy values ==> '0','false', " ", [],{},function(){}
+
+// *************??(nullish Coalescing operator)*********************  undefined, null
+// let val1;
+// val1 = 15 ?? 10
+// val1 = null ?? 20
+// console.log(val1);
+
+
+// terniary Opeartor ?  true, False
+
+
+// ****************for loop**************************
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//     const m = i;
+//     if (m==5) {
+//         console.log("5 is worst number");
+//     }
+//     console.log(m);    
+
+// }
+
+
+
+
+// for (let i = 0; i <=5 ; i++) {
+//     console.log(`outer loop value ${i}`);
+//     for (let j = 0; j <=3; j++) {
+//         // console.log(`inner loop value is: ${j} AND outer loop value is ${i}`);;
+//     console.log(i + "*" + j + "= " + i*j);    
+//     }
+// }
+
+
+
+// let myArr = ['batman', 'superman', "flash"]
+// for (let i = 0; i < myArr.length; i++) {
+//     const element = myArr[i];
+//     console.log(element);
+// }
+
+
+
+// for (let index = 1; index <= 20; index++) {
+//     if (index===10) {
+//         console.log(`half is done`);
+//         break
+//     }
+//     console.log(index);
+// }
+
+// for (let index = 1; index <= 20; index++) {
+//     if (index===10) {
+//         console.log(`half is done`);
+//         continue
+//     }
+//     console.log(index);
+// }
+
+
+
+// ******************while and do while loop******************
+
+// let index  = 0 
+// while (index<=10) {
+//     console.log(`value of index is ${index}`);
+// index = index + 2
+// }
+
+
+
+
+
+// let myArr = ["batman", "superman", 'flash']
+// let index = 0;
+// while (index < myArr.length) {
+//     console.log(`value is ${myArr[index]}`)
+//     index = index + 1;
+// }
+
+// in dowhile loop first work done than condition is checked
+// let score = 11;
+// do {
+//     console.log(`score is ${score}`);
+//     score ++
+// } while (score <=10);
+
+
+// *******maps ***********
+
+const myMap = new Map()
+myMap.set('PK', "PAKISTAN")
+myMap.set('IN', "INDIA")
+myMap.set('USA', "UNITED STATES OF AMERICA")
+// console.log(myMap);
+for (const [key, value] of myMap) {
+    console.log(key,":- ", value)
+}
+
+
+
+
+// ***************array loops**********
+let myArr = [1,2,3,4,5,6]
+for (const num of myArr) {
+    // console.log(num);
+}
+
+const greetings = "Hello World!"
+for (const greet of greetings) {
+    // console.log(`Each Char is ${greet}`);
+}
+
+
