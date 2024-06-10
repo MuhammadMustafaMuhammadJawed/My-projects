@@ -465,27 +465,80 @@ let anotherName = new String("Mustafa")
 
 // *******maps ***********
 
-const myMap = new Map()
-myMap.set('PK', "PAKISTAN")
-myMap.set('IN', "INDIA")
-myMap.set('USA', "UNITED STATES OF AMERICA")
-// console.log(myMap);
-for (const [key, value] of myMap) {
-    console.log(key,":- ", value)
-}
+// const myMap = new Map()
+// myMap.set('PK', "PAKISTAN")
+// myMap.set('IN', "INDIA")
+// myMap.set('USA', "UNITED STATES OF AMERICA")
+// // console.log(myMap);
+// for (const [key, value] of myMap) {
+//     console.log(key,":- ", value)
+// }
+
+// maps are NON ITERATABLE
 
 
+// // ***************array loops**********
+// let myArr = [1,2,3,4,5,6]
+// for (const num of myArr) {
+//     // console.log(num);
+// }
+
+// const greetings = "Hello World!"
+// for (const greet of greetings) {
+//     // console.log(`Each Char is ${greet}`);
+// }
+
+// **************for in loop***********
+
+// const myObj = {
+//     js: "javascript",
+//     rb: "ruby",
+//     cpp:"C++",
+//     swift: "swift by apple",
+// }
+
+// for (const key in myObj) {
+//     // console.log(`${key} is shortcut for ${myObj[key]}`);
+// }
+
+// let programming = ["js","rb", "c++","pyth"]
+// for (const key in programming) {
+//     console.log(`${key} is index for ${programming[key]}`);
+// }
 
 
-// ***************array loops**********
-let myArr = [1,2,3,4,5,6]
-for (const num of myArr) {
-    // console.log(num);
-}
+// **********for each loop***********
 
-const greetings = "Hello World!"
-for (const greet of greetings) {
-    // console.log(`Each Char is ${greet}`);
-}
+// const  coding = ["js","c++","pyth","ruby","java"]
+// coding.forEach(function(items){
+//     console.log(items);
+// })
+// coding.forEach((items)=>{
+//     console.log(items);
+// })
+// function preintMe (items){
+//     console.log(items);
+// }
+// coding.forEach(preintMe)
+
+// coding.forEach((items,index,array)=>{
+//     console.log(items,index,array);
+// })
 
 
+const myCoding = [{
+languageName: "Javascript",
+languageFile: "Js"
+},
+{
+    languageName: "python",
+    languageFile:"py"
+},
+{
+        languageName: "ruby",
+    languageFile:"rb"
+}]
+myCoding.forEach( (items)=>{
+console.log(`${items.languageName} is name for language ${items.languageFile}`);
+
+} )
