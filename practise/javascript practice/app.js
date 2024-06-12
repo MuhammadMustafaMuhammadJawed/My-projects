@@ -526,19 +526,19 @@ let anotherName = new String("Mustafa")
 // })
 
 
-const myCoding = [{
-languageName: "Javascript",
-languageFile: "Js"
-},
-{
-    languageName: "python",
-    languageFile:"py"
-},
-{
-        languageName: "ruby",
-    languageFile:"rb"
-}]
-myCoding.forEach( (items)=>{
-console.log(`${items.languageName} is name for language ${items.languageFile}`);
+// const myCoding = [{
+// languageName: "Javascript",
+// languageFile: "Js"
+// },
+// {
+//     languageName: "python",
+//     languageFile:"py"
+// },
+// {
+//         languageName: "ruby",
+//     languageFile:"rb"
+// }]
+// myCoding.forEach( (items)=>{
+// console.log(`${items.languageName} is name for language ${items.languageFile}`);
 
-} )
+// } )
