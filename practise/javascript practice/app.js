@@ -592,20 +592,25 @@ let anotherName = new String("Mustafa")
 // },5)
 // console.log(newNum);
 
-const shoppingCart = [
-    {
-        itemName: "PY Course",
-        price: 2999
-    },
-    {
-        itemName: "Js Course",
-        price: 3999
-    },
-    {
-        itemName: "Mobile Dev Course",
-        price: 5999
-    }
-]
+// const shoppingCart = [
+//     {
+//         itemName: "PY Course",
+//         price: 2999
+//     },
+//     {
+//         itemName: "Js Course",
+//         price: 3999
+//     },
+//     {
+//         itemName: "Mobile Dev Course",
+//         price: 5999
+//     }
+// ]
 
-const total = shoppingCart.reduce((acc,item)=>acc + item.price,0)
-console.log(total);
+// const total = shoppingCart.reduce((acc,item)=>acc + item.price,0)
+// console.log(total);
+
+
+// in "inner text" only the text shows which is visible
+// in "text content" all the text is shown even if it is hidden by styling
+// in "innerHTML" whole HTML is shown
