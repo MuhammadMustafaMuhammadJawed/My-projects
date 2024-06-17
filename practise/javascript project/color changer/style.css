@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+  }
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+    cursor: pointer;
+  }
+  
+  #white {
+    background: white;
+    cursor: pointer;
+    
+  }
+  #blue {
+    cursor: pointer;
+    background: blue;
+  }
+  #yellow {
+    cursor: pointer;
+    background: yellow;
+  }
+  #green {
+    cursor: pointer;
+    background: green;
+  }
+  #purple {
+    cursor: pointer;
+    background: purple;
+  }
+  #plum {
+    cursor: pointer;
+    background: plum;
+  }
