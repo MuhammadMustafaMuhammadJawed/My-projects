@@ -617,11 +617,11 @@ let anotherName = new String("Mustafa")
 
 
 
-const div = document.createElement("div")
-console.log(div);
-div.className = "Main"
-div.id = "Main id"
-div.setAttribute("title", "first title")
-div.style.backgroundColor= "green"
-div.style.padding= "12px"
-div.innerText = "Mustafa"
+// const div = document.createElement("div")
+// console.log(div);
+// div.className = "Main"
+// div.id = "Main id"
+// div.setAttribute("title", "first title")
+// div.style.backgroundColor= "green"
+// div.style.padding= "12px"
+// div.innerText = "Mustafa"
