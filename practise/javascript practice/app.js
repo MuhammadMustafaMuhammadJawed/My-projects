@@ -614,3 +614,14 @@ let anotherName = new String("Mustafa")
 // in "inner text" only the text shows which is visible
 // in "text content" all the text is shown even if it is hidden by styling
 // in "innerHTML" whole HTML is shown
+
+
+
+const div = document.createElement("div")
+console.log(div);
+div.className = "Main"
+div.id = "Main id"
+div.setAttribute("title", "first title")
+div.style.backgroundColor= "green"
+div.style.padding= "12px"
+div.innerText = "Mustafa"
