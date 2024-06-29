@@ -625,3 +625,33 @@ let anotherName = new String("Mustafa")
 // div.style.backgroundColor= "green"
 // div.style.padding= "12px"
 // div.innerText = "Mustafa"
+
+
+
+
+// 29/6/24 (saturday) class//////////////////////////////////////////////
+
+// const y; ==> cannot only declare
+// object and array are mutated
+// string,number,boolen etc are reassign
+// in const we cannnot reassign but we can mutate
+// let and const have block scope
+// while var has global (window) scope
+// let and const are gone to "temporalredzone"
+//arrow function ====> const fn = () => {
+// console.log("this is arrow function")
+// }
+//in arrow function "this" points global objectd
+
+//objectcdestructuring ==> const {} = object name
+
+// closure is function in fnuction
+// ""function init() {
+//   var name = "Mozilla"; // name is a local variable created by init
+//   function displayName() {
+//     // displayName() is the inner function, that forms the closure
+//     console.log(name); // use variable declared in the parent function
+//   }
+//   displayName();
+// }
+// init();""
