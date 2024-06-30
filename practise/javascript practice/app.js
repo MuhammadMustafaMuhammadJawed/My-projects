@@ -756,5 +756,17 @@ console.log(annualPrice);
 
 //
 
+// counter display
+     
+// let number = 0
+// let numberElement = document.getElementById('number')
+// let Button = document.getElementById('increase')
+
+// Button.addEventListener('click', ()=>{
+//     number++;
+//     numberElement.textContent = number;
+// })
+
+
      
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
