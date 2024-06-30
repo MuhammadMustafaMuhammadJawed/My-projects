@@ -526,19 +526,93 @@ let anotherName = new String("Mustafa")
 // })
 
 
-const myCoding = [{
-languageName: "Javascript",
-languageFile: "Js"
-},
-{
-    languageName: "python",
-    languageFile:"py"
-},
-{
-        languageName: "ruby",
-    languageFile:"rb"
-}]
-myCoding.forEach( (items)=>{
-console.log(`${items.languageName} is name for language ${items.languageFile}`);
+// const myCoding = [{
+// languageName: "Javascript",
+// languageFile: "Js"
+// },
+// {
+//     languageName: "python",
+//     languageFile:"py"
+// },
+// {
+//         languageName: "ruby",
+//     languageFile:"rb"
+// }]
+// myCoding.forEach( (items)=>{
+// console.log(`${items.languageName} is name for language ${items.languageFile}`);
 
-} )
+// } )
+
+
+
+// var plan1 = {
+//      name: "Basic",
+//      price: 3.99,
+//      space: 100,
+//      transfer: 1000,
+//      pages: 10
+//      };
+
+//     plan1.discountMonths = [5,7,11]
+//      console.log(plan1);
+//      var mo = plan1.discountMonths[2];
+// console.log(mo);
+
+
+// const deal3 = {
+//     name: "budget friendly",
+//     cost: 22.33};
+
+//     deal3.cost = 79.99;
+//     deal3.name = "super saver";
+//     delete deal3.name;
+//     propertyExists = "cost" in deal3;
+
+//     console.log(deal3);
+//     console.log(propertyExists);
+
+// function calcAnnual(percentIfDisc) {
+//     var bestPrice = plan1.price;
+//     var currDate = new Date();
+//     var thisMo = currDate.getMonth();
+//     for (var i = 0; i < plan1.discountMonths.length; i++) {
+//     if (plan1.discountMonths[i] === thisMo) {
+//     bestPrice = plan1.price * percentIfDisc;
+//     break;
+//     }
+//      }
+//      return bestPrice * 12;
+//      }
+//      var annualPrice = calcAnnual(1.88);
+//      console.log(annualPrice);
+
+
+
+var plan1 = {
+     name: "Basic",
+     price: 3.99,
+     space: 100,
+     transfer: 1000,
+     pages: 10,
+     discountMonths: [6, 7],
+     calcAnnual: function(percentIfDisc) {
+    var bestPrice = plan1.price;
+     var currDate = new Date();
+     var thisMo = currDate.getMonth();
+     for (var i = 0; i < plan1.discountMonths.length; i++) {
+     if (plan1.discountMonths[i] === thisMo) {
+     bestPrice = plan1.price * percentIfDisc;
+     break;
+     }
+     }
+     return bestPrice * 12;
+     }
+     };
+
+
+
+
+
+
+var annualPrice = plan1.calcAnnual(.85);
+console.log(annualPrice);
