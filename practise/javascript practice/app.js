@@ -769,4 +769,22 @@ console.log(annualPrice);
 
 
      
+// hide show toggling project
+
+
+// let image = document.getElementById("image")
+// let showButton = document.getElementById("show")
+// let hideButton = document.getElementById("hide")
+
+
+// hideButton.addEventListener('click', function () {
+//     // console.log("hide")
+//     image.style.visibility = "hidden"
+// })
+// showButton.addEventListener('click', function () {
+//     // console.log("show")
+//     image.style.visibility = ""
+// })
+
+     
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
