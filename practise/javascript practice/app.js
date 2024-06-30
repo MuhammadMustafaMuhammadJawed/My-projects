@@ -786,5 +786,11 @@ console.log(annualPrice);
 //     image.style.visibility = ""
 // })
 
+
+
+// 30/6/24 (sunday) class//////////////////////////////////////////////
+// local variables are those which declared in function
+// global variables are declared main code
+// block variables are those which are declared in block scope
      
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
