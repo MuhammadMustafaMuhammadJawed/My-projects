@@ -730,4 +730,31 @@ console.log(annualPrice);
 //   displayName();
 // }
 // init();""
+
+// background color change
+     // document.addEventListener('DOMContentLoaded',()=>{
+
+//     function Color(){
+//         const letters = '0123456789ABCDEF'
+//         let color = '#'
+//         for (let i = 0; i<6; i++){
+//             color += letters[Math.floor(Math.random()*16)]
+//         }
+//         return color;
+//     }
+
+// let colorButton = document.getElementById('colorButton')
+// colorButton.addEventListener('click',()=>{
+//     const randomColor = Color();
+//     document.body.style.backgroundColor = randomColor; 
+    
+// console.log(document.body.style.backgroundColor = randomColor)
+// })
+
+
+// })
+
+//
+
+     
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
