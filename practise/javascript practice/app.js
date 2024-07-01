@@ -183,7 +183,7 @@ let anotherName = new String("Mustafa")
 
 
 // const JsUser =  {
-// [mySymb]:"Hello",    
+// [mySymb]:"Hello",
 // name:"Mustafa",
 // Age : 17,
 // email: "Mustafa@google.com",
@@ -191,7 +191,7 @@ let anotherName = new String("Mustafa")
 // }
 // JsUser.Age = 18 ==>to change value
 
-// Object.freeze(JsUser)==>no changes in object 
+// Object.freeze(JsUser)==>no changes in object
 // console.log(JsUser[mySymb]); ==>Way to call object
 // console.log(JsUser.name);==>Way to call object
 
@@ -393,7 +393,7 @@ let anotherName = new String("Mustafa")
 //     if (m==5) {
 //         console.log("5 is worst number");
 //     }
-//     console.log(m);    
+//     console.log(m);
 
 // }
 
@@ -404,7 +404,7 @@ let anotherName = new String("Mustafa")
 //     console.log(`outer loop value ${i}`);
 //     for (let j = 0; j <=3; j++) {
 //         // console.log(`inner loop value is: ${j} AND outer loop value is ${i}`);;
-//     console.log(i + "*" + j + "= " + i*j);    
+//     console.log(i + "*" + j + "= " + i*j);
 //     }
 // }
 
@@ -438,7 +438,7 @@ let anotherName = new String("Mustafa")
 
 // ******************while and do while loop******************
 
-// let index  = 0 
+// let index  = 0
 // while (index<=10) {
 //     console.log(`value of index is ${index}`);
 // index = index + 2
@@ -625,3 +625,36 @@ let anotherName = new String("Mustafa")
 // div.style.backgroundColor= "green"
 // div.style.padding= "12px"
 // div.innerText = "Mustafa"
+
+
+
+//  ASYNC CODE//////////////////////
+//  javascript is synchronous(code executes line wise) and single threaded
+//blocking code ==> block the flow of the programme ==> read file sync
+//Non blocking code ==> donot block the flow of the execution ==> read file Async
+  
+
+/////// set timeout and interval //////////////////
+// const sayName = function () {
+//     console.log("mustafa");
+// }
+// const changeMe = setTimeout(sayName,3000)
+
+// document.querySelector('#stop').addEventListener('click', function () {
+//     clearTimeout(changeMe)
+//     console.log("STOPPED");
+// })
+
+
+const sayDate = function (str) {
+    console.log(str, Date.now());
+}
+// let intId = setInterval(sayDate,1000,"By")
+ document.querySelector('#start').addEventListener('click',function hhhh () {
+    let intIid = setInterval(sayDate,1000,"By")
+    console.log('STARTED')
+ })
+document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval()
+console.log('stopped');
+})
