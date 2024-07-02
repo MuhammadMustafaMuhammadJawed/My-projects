@@ -542,6 +542,74 @@ let anotherName = new String("Mustafa")
 // console.log(`${items.languageName} is name for language ${items.languageFile}`);
 
 // } )
+<<<<<<< HEAD
+
+
+
+// var plan1 = {
+//      name: "Basic",
+//      price: 3.99,
+//      space: 100,
+//      transfer: 1000,
+//      pages: 10
+//      };
+
+//     plan1.discountMonths = [5,7,11]
+//      console.log(plan1);
+//      var mo = plan1.discountMonths[2];
+// console.log(mo);
+
+
+// const deal3 = {
+//     name: "budget friendly",
+//     cost: 22.33};
+
+//     deal3.cost = 79.99;
+//     deal3.name = "super saver";
+//     delete deal3.name;
+//     propertyExists = "cost" in deal3;
+
+//     console.log(deal3);
+//     console.log(propertyExists);
+
+// function calcAnnual(percentIfDisc) {
+//     var bestPrice = plan1.price;
+//     var currDate = new Date();
+//     var thisMo = currDate.getMonth();
+//     for (var i = 0; i < plan1.discountMonths.length; i++) {
+//     if (plan1.discountMonths[i] === thisMo) {
+//     bestPrice = plan1.price * percentIfDisc;
+//     break;
+//     }
+//      }
+//      return bestPrice * 12;
+//      }
+//      var annualPrice = calcAnnual(1.88);
+//      console.log(annualPrice);
+
+
+
+var plan1 = {
+     name: "Basic",
+     price: 3.99,
+     space: 100,
+     transfer: 1000,
+     pages: 10,
+     discountMonths: [6, 7],
+     calcAnnual: function(percentIfDisc) {
+    var bestPrice = plan1.price;
+     var currDate = new Date();
+     var thisMo = currDate.getMonth();
+     for (var i = 0; i < plan1.discountMonths.length; i++) {
+     if (plan1.discountMonths[i] === thisMo) {
+     bestPrice = plan1.price * percentIfDisc;
+     break;
+     }
+     }
+     return bestPrice * 12;
+     }
+     };
+=======
 // const myNums = [1,2,3,4,5,6,7,8,9,10]
 // const newNum = myNums.filter((num)=>(num > 6))
 // const newNum = myNums.filter((num)=>{
@@ -625,6 +693,7 @@ let anotherName = new String("Mustafa")
 // div.style.backgroundColor= "green"
 // div.style.padding= "12px"
 // div.innerText = "Mustafa"
+<<<<<<< HEAD
 
 
 
@@ -658,3 +727,106 @@ document.querySelector('#stop').addEventListener('click', function(){
     clearInterval()
 console.log('stopped');
 })
+=======
+>>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
+
+
+
+
+<<<<<<< HEAD
+
+
+var annualPrice = plan1.calcAnnual(.85);
+console.log(annualPrice);
+=======
+// 29/6/24 (saturday) class//////////////////////////////////////////////
+
+// const y; ==> cannot only declare
+// object and array are mutated
+// string,number,boolen etc are reassign
+// in const we cannnot reassign but we can mutate
+// let and const have block scope
+// while var has global (window) scope
+// let and const are gone to "temporalredzone"
+//arrow function ====> const fn = () => {
+// console.log("this is arrow function")
+// }
+//in arrow function "this" points global objectd
+
+//objectcdestructuring ==> const {} = object name
+
+// closure is function in fnuction
+// ""function init() {
+//   var name = "Mozilla"; // name is a local variable created by init
+//   function displayName() {
+//     // displayName() is the inner function, that forms the closure
+//     console.log(name); // use variable declared in the parent function
+//   }
+//   displayName();
+// }
+// init();""
+
+// background color change
+     // document.addEventListener('DOMContentLoaded',()=>{
+
+//     function Color(){
+//         const letters = '0123456789ABCDEF'
+//         let color = '#'
+//         for (let i = 0; i<6; i++){
+//             color += letters[Math.floor(Math.random()*16)]
+//         }
+//         return color;
+//     }
+
+// let colorButton = document.getElementById('colorButton')
+// colorButton.addEventListener('click',()=>{
+//     const randomColor = Color();
+//     document.body.style.backgroundColor = randomColor; 
+    
+// console.log(document.body.style.backgroundColor = randomColor)
+// })
+
+
+// })
+
+//
+
+// counter display
+     
+// let number = 0
+// let numberElement = document.getElementById('number')
+// let Button = document.getElementById('increase')
+
+// Button.addEventListener('click', ()=>{
+//     number++;
+//     numberElement.textContent = number;
+// })
+
+
+     
+// hide show toggling project
+
+
+// let image = document.getElementById("image")
+// let showButton = document.getElementById("show")
+// let hideButton = document.getElementById("hide")
+
+
+// hideButton.addEventListener('click', function () {
+//     // console.log("hide")
+//     image.style.visibility = "hidden"
+// })
+// showButton.addEventListener('click', function () {
+//     // console.log("show")
+//     image.style.visibility = ""
+// })
+
+
+
+// 30/6/24 (sunday) class//////////////////////////////////////////////
+// local variables are those which declared in function
+// global variables are declared main code
+// block variables are those which are declared in block scope
+     
+>>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
+>>>>>>> 76db2839c01a159ac94fad4e8801c7fd9dc88605
