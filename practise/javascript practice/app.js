@@ -183,7 +183,7 @@ let anotherName = new String("Mustafa")
 
 
 // const JsUser =  {
-// [mySymb]:"Hello",    
+// [mySymb]:"Hello",
 // name:"Mustafa",
 // Age : 17,
 // email: "Mustafa@google.com",
@@ -191,7 +191,7 @@ let anotherName = new String("Mustafa")
 // }
 // JsUser.Age = 18 ==>to change value
 
-// Object.freeze(JsUser)==>no changes in object 
+// Object.freeze(JsUser)==>no changes in object
 // console.log(JsUser[mySymb]); ==>Way to call object
 // console.log(JsUser.name);==>Way to call object
 
@@ -393,7 +393,7 @@ let anotherName = new String("Mustafa")
 //     if (m==5) {
 //         console.log("5 is worst number");
 //     }
-//     console.log(m);    
+//     console.log(m);
 
 // }
 
@@ -404,7 +404,7 @@ let anotherName = new String("Mustafa")
 //     console.log(`outer loop value ${i}`);
 //     for (let j = 0; j <=3; j++) {
 //         // console.log(`inner loop value is: ${j} AND outer loop value is ${i}`);;
-//     console.log(i + "*" + j + "= " + i*j);    
+//     console.log(i + "*" + j + "= " + i*j);
 //     }
 // }
 
@@ -438,7 +438,7 @@ let anotherName = new String("Mustafa")
 
 // ******************while and do while loop******************
 
-// let index  = 0 
+// let index  = 0
 // while (index<=10) {
 //     console.log(`value of index is ${index}`);
 // index = index + 2
@@ -693,6 +693,41 @@ var plan1 = {
 // div.style.backgroundColor= "green"
 // div.style.padding= "12px"
 // div.innerText = "Mustafa"
+<<<<<<< HEAD
+
+
+
+//  ASYNC CODE//////////////////////
+//  javascript is synchronous(code executes line wise) and single threaded
+//blocking code ==> block the flow of the programme ==> read file sync
+//Non blocking code ==> donot block the flow of the execution ==> read file Async
+  
+
+/////// set timeout and interval //////////////////
+// const sayName = function () {
+//     console.log("mustafa");
+// }
+// const changeMe = setTimeout(sayName,3000)
+
+// document.querySelector('#stop').addEventListener('click', function () {
+//     clearTimeout(changeMe)
+//     console.log("STOPPED");
+// })
+
+
+const sayDate = function (str) {
+    console.log(str, Date.now());
+}
+// let intId = setInterval(sayDate,1000,"By")
+ document.querySelector('#start').addEventListener('click',function hhhh () {
+    let intIid = setInterval(sayDate,1000,"By")
+    console.log('STARTED')
+ })
+document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval()
+console.log('stopped');
+})
+=======
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
 
 
@@ -730,4 +765,68 @@ console.log(annualPrice);
 //   displayName();
 // }
 // init();""
+
+// background color change
+     // document.addEventListener('DOMContentLoaded',()=>{
+
+//     function Color(){
+//         const letters = '0123456789ABCDEF'
+//         let color = '#'
+//         for (let i = 0; i<6; i++){
+//             color += letters[Math.floor(Math.random()*16)]
+//         }
+//         return color;
+//     }
+
+// let colorButton = document.getElementById('colorButton')
+// colorButton.addEventListener('click',()=>{
+//     const randomColor = Color();
+//     document.body.style.backgroundColor = randomColor; 
+    
+// console.log(document.body.style.backgroundColor = randomColor)
+// })
+
+
+// })
+
+//
+
+// counter display
+     
+// let number = 0
+// let numberElement = document.getElementById('number')
+// let Button = document.getElementById('increase')
+
+// Button.addEventListener('click', ()=>{
+//     number++;
+//     numberElement.textContent = number;
+// })
+
+
+     
+// hide show toggling project
+
+
+// let image = document.getElementById("image")
+// let showButton = document.getElementById("show")
+// let hideButton = document.getElementById("hide")
+
+
+// hideButton.addEventListener('click', function () {
+//     // console.log("hide")
+//     image.style.visibility = "hidden"
+// })
+// showButton.addEventListener('click', function () {
+//     // console.log("show")
+//     image.style.visibility = ""
+// })
+
+
+
+// 30/6/24 (sunday) class//////////////////////////////////////////////
+// local variables are those which declared in function
+// global variables are declared main code
+// block variables are those which are declared in block scope
+     
 >>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
+>>>>>>> 76db2839c01a159ac94fad4e8801c7fd9dc88605
