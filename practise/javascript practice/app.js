@@ -1,5 +1,5 @@
-var Score = null;
-var Converted = Number(Score);
+// var Score = null;
+// var Converted = Number(Score);
 // console.log(typeof Converted);
 // console.log( Converted);
 
@@ -63,7 +63,7 @@ var Converted = Number(Score);
 
 
 
-let anotherName = new String("Mustafa")
+// let anotherName = new String("Mustafa")
 // let Name = "      Mustafa       "
 // console.log(Name.indexOf('a'));
 // console.log(Name.charAt(5));
@@ -542,7 +542,7 @@ let anotherName = new String("Mustafa")
 // console.log(`${items.languageName} is name for language ${items.languageFile}`);
 
 // } )
-<<<<<<< HEAD
+
 
 
 
@@ -609,7 +609,7 @@ var plan1 = {
      return bestPrice * 12;
      }
      };
-=======
+// =======
 // const myNums = [1,2,3,4,5,6,7,8,9,10]
 // const newNum = myNums.filter((num)=>(num > 6))
 // const newNum = myNums.filter((num)=>{
@@ -693,7 +693,7 @@ var plan1 = {
 // div.style.backgroundColor= "green"
 // div.style.padding= "12px"
 // div.innerText = "Mustafa"
-<<<<<<< HEAD
+
 
 
 
@@ -715,30 +715,25 @@ var plan1 = {
 // })
 
 
-const sayDate = function (str) {
-    console.log(str, Date.now());
-}
-// let intId = setInterval(sayDate,1000,"By")
- document.querySelector('#start').addEventListener('click',function hhhh () {
-    let intIid = setInterval(sayDate,1000,"By")
-    console.log('STARTED')
- })
-document.querySelector('#stop').addEventListener('click', function(){
-    clearInterval()
-console.log('stopped');
-})
-=======
->>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
+// const sayDate = function (str) {
+//     console.log(str, Date.now());
+// }
+// // let intId = setInterval(sayDate,1000,"By")
+//  document.querySelector('#start').addEventListener('click',function hhhh () {
+//     let intIid = setInterval(sayDate,1000,"By")
+//     console.log('STARTED')
+//  })
+// document.querySelector('#stop').addEventListener('click', function(){
+//     clearInterval()
+// console.log('stopped');
+// })
+// // =======
 
 
 
-
-<<<<<<< HEAD
-
-
-var annualPrice = plan1.calcAnnual(.85);
-console.log(annualPrice);
-=======
+// var annualPrice = plan1.calcAnnual(.85);
+// console.log(annualPrice);
+// =======
 // 29/6/24 (saturday) class//////////////////////////////////////////////
 
 // const y; ==> cannot only declare
@@ -827,6 +822,16 @@ console.log(annualPrice);
 // local variables are those which declared in function
 // global variables are declared main code
 // block variables are those which are declared in block scope
-     
->>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
->>>>>>> 76db2839c01a159ac94fad4e8801c7fd9dc88605
+ 
+
+////////////local storage////////////////////////////
+
+
+let email = prompt("Enter your email")
+let pass = prompt("enter your password") 
+
+localStorage.setItem(email,pass)
+
+console.log( localStorage.key(1));
+
+
