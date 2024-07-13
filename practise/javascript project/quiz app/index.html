@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz app</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <button class="admin-button">Admin</button>
+    <a href="login.html"> <button class="start-quiz-button">Start Quiz</button></a>
+  </div>
+
+  <input id="admin-password" type="password" style="display: none;  ">
+  <button id="admin-pswd-btn" hidden>submit</button>
+  <script>
+    var adminButton = document.querySelector(".admin-button").addEventListener("click", function () {
+      console.log("clicked");
+      var adminPswd = document.getElementById("admin-password")
+      var adminPswdButton = document.getElementById("admin-pswd-btn")
+      adminPswd.setAttribute("style", "display: flex; width: 20% ")
+      adminPswdButton.setAttribute("style", "display: flex;  ")
+
+      adminPswdButton.addEventListener("click", function () {
+
+        console.log("hello world");
+        if (adminPswd.value == 123) {
+          window.open("admin.html")
+        }
+
+      })
+
+    })
+
+
+
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
