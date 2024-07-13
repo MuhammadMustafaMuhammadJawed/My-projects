@@ -5,9 +5,8 @@
 document.getElementById("signup-btn").addEventListener("click", signupFunction)
 
 function signupFunction() {
-    if (  emailValue == localStorage.getItem("email1")  ) {
-        alert("User already exist")
-    }else{
+ 
+
         var emailValue = document.getElementById("signup-email").value;
         var passwordValue = document.getElementById("signup-password").value;
         
@@ -17,13 +16,10 @@ function signupFunction() {
     alert("Signup Successful")
 
 console.log(emailValue)
-    emailValue.innerHTML = "";
-    passwordValue.innerHTML = "";
-
-    
+   
 }
     
-    }
+    
     
     
 
