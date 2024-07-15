@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
 </head>
+
 <body>
     <div class="content">
+        <h2>Question To Add</h2>
+        <input type="text" id="question" placeholder="question"><br>
 
-Question To Add <br>
+        <h2>Answers to add</h2>
+        <input type="text" class="answer" placeholder="add answer 1"><br>
+        <input type="text" class="answer" placeholder="add answer 2"><br>
+        <input type="text" class="answer" placeholder="add answer 3"><br>
+        <input type="text" class="answer" placeholder="add answer 4"><br>
 
-<input type="text" placeholder="question"><br>
+        <h2>Correct Answer</h2>
+        <select id="correct-answer">
+            <option value="0">Answer 1</option>
+            <option value="1">Answer 2</option>
+            <option value="2">Answer 3</option>
+            <option value="3">Answer 4</option>
+        </select><br><br>
 
-Answers to add <br>
-<input type="text" placeholder="add answer"> <br>
-<input type="text" placeholder="add answer"><br>
-<input type="text" placeholder="add answer"><br>
-<input type="text" placeholder="add answer"><br>
-
-
-
-
-
-
-
+        <button onclick="addQuestion()">Add Question</button>
     </div>
 
+    <script>
+        let userStore = JSON.parse(localStorage.getItem("usersss")) || [];
 
 
+        window.addEventListener("load", () => {
+
+
+            let userExistsAdmin = userStore.some(existingUserAdmin => existingUserAdmin.email === "admin@admin.com" && existingUserAdmin.password === "1234");
+            console.log(userExistsAdmin)
+
+
+            if (!userExistsAdmin) {
+                location.pathname = "/login.html";
+            }
+        });
+
+
+
+
+
+        function addQuestion() {
+            let questionText = document.getElementById("question").value;
+            let answers = document.querySelectorAll(".answer");
+            let correctAnswerIndex = document.getElementById("correct-answer").value;
+
+            if (questionText.trim() === "" || Array.from(answers).some(answer => answer.value.trim() === "")) {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            let answersArray = [];
+            answers.forEach((answer, index) => {
+                answersArray.push({
+                    text: answer.value,
+                    correct: index == correctAnswerIndex
+                });
+            });
+
+            let newQuestion = {
+                question: questionText,
+                answer: answersArray
+            };
+
+            let questions = JSON.parse(localStorage.getItem("questions")) || [];
+            questions.push(newQuestion);
+            localStorage.setItem("questions", JSON.stringify(questions));
+
+
+            alert("Question added successfully!");
+
+            
+            
+           
+           
+        }
+    </script>
 </body>
+
 </html>

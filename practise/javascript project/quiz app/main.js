@@ -1,7 +1,20 @@
-const questions = [
+window.addEventListener("DOMContentLoaded", () => {
+    const currentUser = localStorage.getItem("usersss");
+    if (!currentUser) {
+      location.pathname = "/login.html";
+    }
+  });
+
+
+
+
+
+
+const questionsFromLocalStorage = JSON.parse(localStorage.getItem("questions")) || [];
+
+const defaultQuestions = [
     {
         question: 'Which type of JavaScript language is?',
-
         answer: [
             { text: 'Object-Oriented', correct: false },
             { text: 'Object-Based', correct: true },
@@ -10,8 +23,7 @@ const questions = [
         ]
     },
     {
-        question: 'Which one of the following also known as Conditional Expression?',
-
+        question: 'Which one of the following is also known as Conditional Expression?',
         answer: [
             { text: 'Alternative to if-else', correct: false },
             { text: 'Switch statement', correct: false },
@@ -51,10 +63,7 @@ const questions = [
     },
 ];
 
-questions.push()
-
-
-
+const questions = [...defaultQuestions, ...questionsFromLocalStorage];
 
 const questionElement = document.getElementById('question');
 const answerButton = document.getElementById('answer-button');
@@ -70,77 +79,71 @@ function startQuiz() {
     showQuestion();
 }
 
-function showQuestion(){
-    resetstate();
-let currentQuestion = questions[currentQuestionIndex];
-let questionNo = currentQuestionIndex + 1;
-questionElement.innerHTML = questionNo + '. ' + currentQuestion.question;
+function showQuestion() {
+    resetState();
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + '. ' + currentQuestion.question;
 
+    currentQuestion.answer.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.setAttribute("class", "btn");
+        answerButton.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAnswer);
+    });
+}
 
-currentQuestion.answer.forEach(answer => {
-    const button = document.createElement("button");
-    button.innerHTML = answer.text;
-    button.setAttribute("class", "btn")
-    answerButton.appendChild(button)
-    if(answer.correct){
-        button.dataset.correct = answer.correct;
+function resetState() {
+    nextButton.style.display = 'none';
+    while (answerButton.firstChild) {
+        answerButton.removeChild(answerButton.firstChild);
     }
-    button.addEventListener("click",selectAnswer)
-})
 }
 
-function resetstate (){
-    nextButton.style.display = 'none'
-while (answerButton.firstChild) {
-    answerButton.removeChild(answerButton.firstChild )
-}
-}
-
-function selectAnswer (e){
+function selectAnswer(e) {
     const selectedBtn = e.target;
-    const isCorrect = selectedBtn.dataset.correct ==="true";
+    const isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect) {
-        selectedBtn.setAttribute("class", "correct")
+        selectedBtn.setAttribute("class", "correct");
         score++;
-    }else{
-        selectedBtn.setAttribute("class", "incorrect")
-
+    } else {
+        selectedBtn.setAttribute("class", "incorrect");
     }
     Array.from(answerButton.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-       button.classList.add("correct")     
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
         }
         button.disabled = true;
-    })
-nextButton.style.display = "block"
+    });
+    nextButton.style.display = "block";
 }
 
-
-function showScore(){
-    resetstate();
-    questionElement.innerHTML = `Your Scored ${score} out of ${questions.length} !`;
-    nextButton.innerHTML = "Play Again"
-    nextButton.style.display = "block"
+function showScore() {
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
 }
 
-
-function handleNextButton (){
+function handleNextButton() {
     currentQuestionIndex++;
-
-    if(currentQuestionIndex  < questions.length){
-showQuestion()
-    }else{
-        showScore()
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
     }
 }
 
-
-
-nextButton.addEventListener("click", ()=>{
+nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
-    }else{
-        startQuiz()
+    } else {
+        startQuiz();
     }
-})
-startQuiz()
+});
+
+startQuiz();
