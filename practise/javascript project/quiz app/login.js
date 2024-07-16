@@ -14,9 +14,9 @@ function signupFunction() {
         password: password,
     };
 
-    // Check if the email already exists
+    
     let userExists = userStore.some(existingUser => existingUser.email === user.email);
-console.log(userExists)
+    console.log(userExists)
     if (userExists) {
         alert("User already exists with this email");
         document.getElementById("signup-email").value = "";
@@ -25,7 +25,6 @@ console.log(userExists)
         userStore.push(user);
         localStorage.setItem("usersss", JSON.stringify(userStore));
         alert("Signup Successful");
-
         document.getElementById("signup-email").value = "";
         document.getElementById("signup-password").value = "";
     }
@@ -33,7 +32,7 @@ console.log(userExists)
 
 document.getElementById("signup-btn").addEventListener("click", signupFunction);
 
-// login
+// login////////////////////////
 
 document.getElementById("login-button").addEventListener("click", loginFunction);
 
@@ -46,21 +45,25 @@ function loginFunction() {
         return;
     }
 
-    let adminLogin = userStore.find(user =>  emailValueLogin === "admin@admin.com" &&  passwordValueLogin === "1234")
+    let adminLogin = userStore.find(user => emailValueLogin === "admin@admin.com" && passwordValueLogin === "1234")
     if (adminLogin) {
         alert("you can now go to admin panel")
+        document.getElementById("login-email").value = "";
+        document.getElementById("login-password").value = "";
         window.open("admin.html")
         window.close("login.html")
         return;
 
     }
     let user = userStore.find(user => user.email === emailValueLogin && user.password === passwordValueLogin);
+   
+    
     if (user) {
         alert("Login Successful");
-        window.open("main.html");
-        window.close("login.html")
         document.getElementById("login-email").value = "";
         document.getElementById("login-password").value = "";
+        window.open("main.html");
+        
     } else {
         alert("Wrong email or password");
     }

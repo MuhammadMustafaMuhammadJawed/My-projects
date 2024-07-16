@@ -3,9 +3,75 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://icon-library.com/images/admin-icon-png/admin-icon-png-28.jpg"
+        type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
 </head>
+
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    select {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+    .go-to-home {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .go-to-home:hover {
+            background-color: #0056b3;}
+</style>
+
+
 
 <body>
     <div class="content">
@@ -27,6 +93,7 @@
         </select><br><br>
 
         <button onclick="addQuestion()">Add Question</button>
+        <a href="./index.html" class="go-to-home">Go to Home</a>
     </div>
 
     <script>
@@ -79,10 +146,12 @@
 
             alert("Question added successfully!");
 
-            
-            
-           
-           
+
+            document.getElementById("question").value = "";
+            answers.forEach(answer => answer.value = "");
+            document.getElementById("correct-answer").value = "0";
+
+
         }
     </script>
 </body>

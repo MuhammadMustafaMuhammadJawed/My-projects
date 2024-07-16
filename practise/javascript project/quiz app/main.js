@@ -1,7 +1,7 @@
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
     const currentUser = localStorage.getItem("usersss");
     if (!currentUser) {
-      location.pathname = "/login.html";
+      location.pathname = "./login.html";
     }
   });
 
