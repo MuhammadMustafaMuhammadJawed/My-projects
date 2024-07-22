@@ -828,5 +828,11 @@ console.log(annualPrice);
 // global variables are declared main code
 // block variables are those which are declared in block scope
      
->>>>>>> bef36c3ce66918e46a89ad24502e3db310d02308
->>>>>>> 76db2839c01a159ac94fad4e8801c7fd9dc88605
+
+// localstorage//////////////////////////
+
+const form = document.getElementById("form")
+FormData.addEventListener("submit",(e)=>{
+    e.preve
+})
+
